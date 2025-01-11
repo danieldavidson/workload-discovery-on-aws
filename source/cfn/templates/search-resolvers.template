@@ -97,7 +97,6 @@ Resources:
           - !Ref PrivateSubnet1
       MemorySize: 256
       Timeout: 65
-      ReservedConcurrentExecutions: 1
 
   OpenSearchSetup:
     Type: Custom::OpenSearchSetup
@@ -130,7 +129,6 @@ Resources:
           - !Ref PrivateSubnet0
           - !Ref PrivateSubnet1
       MemorySize: 1024
-      ReservedConcurrentExecutions: 50
       Environment:
         Variables:
           ES_REGION: !Sub ${AWS::Region}

@@ -107,7 +107,6 @@ Resources:
               Resource: !Sub arn:${AWS::Partition}:s3:::${WebUIBucket}/${SettingsObjectKey}
       Runtime: !Ref PythonLambdaRuntime
       Timeout: 120
-      ReservedConcurrentExecutions: 1
 
   UiSettings:
     Type: Custom::UiSettings

@@ -184,5 +184,4 @@ Resources:
                 - codebuild:StartBuild
               Resource: !GetAtt CodeBuildProject.Arn
       Runtime: !Ref PythonLambdaRuntime
-      ReservedConcurrentExecutions: 1
       Timeout: 900

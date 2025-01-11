@@ -167,7 +167,6 @@ Resources:
           CURCrawlerKey: !Ref CURCrawlerKey
       Handler: index.handler
       Timeout: 30
-      ReservedConcurrentExecutions: 1
       Role: !GetAtt AWSCURCrawlerLambdaExecutor.Arn
 
   AWSStartCURCrawler:
@@ -232,7 +231,6 @@ Resources:
       Handler: index.handler
       Timeout: 30
       Runtime: !Ref NodeLambdaRuntime
-      ReservedConcurrentExecutions: 1
       Role: !GetAtt AWSS3CURLambdaExecutor.Arn
 
   AWSPutS3CURNotification:

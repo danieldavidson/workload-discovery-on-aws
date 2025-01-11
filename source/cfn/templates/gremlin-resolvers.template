@@ -144,7 +144,6 @@ Resources:
           - !Ref PrivateSubnet0
           - !Ref PrivateSubnet1
       MemorySize: 1024
-      ReservedConcurrentExecutions: 150
       Tracing: Active
       Environment:
         Variables:

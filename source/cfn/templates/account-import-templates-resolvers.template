@@ -75,7 +75,6 @@ Resources:
       TracingConfig:
         Mode: Active
       MemorySize: 1024
-      ReservedConcurrentExecutions: 5
       Environment:
         Variables:
           ACCOUNT_ID: !Ref AWS::AccountId

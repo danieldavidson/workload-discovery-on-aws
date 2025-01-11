@@ -476,7 +476,6 @@ Resources:
     Properties:
       Handler: index.handler
       Runtime: !FindInMap [Solution, Constants, PythonLambdaRuntime]
-      ReservedConcurrentExecutions: 1
       InlineCode: |
         import cfnresponse
         def handler (event, context):

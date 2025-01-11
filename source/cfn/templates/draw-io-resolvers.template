@@ -58,7 +58,6 @@ Resources:
         Key: !Sub ${DeploymentBucketKey}/drawio.zip
       Timeout: 5
       MemorySize: 256
-      ReservedConcurrentExecutions: 5
 
   DrawIoInvokeRole:
     Type: AWS::IAM::Role
